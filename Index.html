@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retrostar Registration</title>
+  <!-- Bootstrap Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Pixelify Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navi -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">R E T R O  S T A R</a>
+      <!--Bootstrap Collapse Nav-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#vip">V. I. P.</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#continue">Continue</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- wrap -->
+  <div class="container my-5">
+    <!--Form -->
+    <section class="form-section">
+      <h2 class="text-center mb-4">R e g i s t e r</h2>
+      <form id="registrationForm">
+        <div class="row mb-3">
+          <!-- First -->
+          <div class="col-md-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="John">
+          </div>
+          <!-- Last -->
+          <div class="col-md-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Doe">
+          </div>
+        </div>
+        <!-- Email -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="john.doe@example.com" required>
+        </div>
+        <!-- PWD -->
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" required>
+        </div>
+        <!-- Term ChkBx -->
+        <div class="mb-3 form-check d-flex justify-content-center">
+          <input type="checkbox" class="form-check-input" id="terms" required>
+          <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+        </div>
+        <!-- submit bTN  --> 
+        <div class="text-center">
+          <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <!--  Hard Coded Info Table  -->
+    <section class="table-section" id="vip">
+      <h2 class="text-center mb-4">V. I. P.</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Email</th>
+            </tr>
+          </thead>
+          <tbody id="userTable">
+            <tr>
+              <td>Chuck</td>
+              <td>Norris</td>
+              <td>invincible@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Bruce</td>
+              <td>Lee</td>
+              <td>Hidden@Dragon.com</td>
+            </tr>
+            <tr>
+              <td>Sumran</td>
+              <td>Domguy</td>
+              <td>Random@Vague.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Pics-->
+    <section class="mb-5" id="gallery">
+      <h2 class="text-center mb-4">G a l l e r y</h2>
+      <!-- 8-Bit Fight Club Pic -->
+      <div class="container-fluid p-0 mb-3">
+        <div class="text-center">
+          <img src="images/Dojo.png" class="img-fluid turbo-char-img" alt="8-Bit Fight Club arcade PNG">
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- 4N Glitch Logo Circle -->
+      <div class="text-center">
+        <img src="images/4nGlitch.png" class="rounded-circle gold-coin-img" alt="4nGlitch.png logo with distortion">
+      </div>
+    </section> 
+
+    <!-- Buttons -->
+    <section class="text-center" id="continue">
+      <h2 class="text-center mb-4">C O N T I N U E ?</h2>
+      <!-- Always Display Restart-->
+      <button class="btn btn-primary mb-2" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"> <!--Js Scroll ONCLiCK-->
+  R E S T A R T
+</button>
+      <!-- Hide Quit on Mobile  -->
+      <button class="btn btn-secondary d-none d-md-block mb-2">Q U I T</button>
+    </section>
+  </div>
+
+  <!-- Bootstrap JS collapse -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

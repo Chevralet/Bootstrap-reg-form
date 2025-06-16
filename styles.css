@@ -1,0 +1,146 @@
+/* Retro Accuterm Palette */
+:root {
+  --trapberry: #FF2944; /* Trapberry for headings */
+  --aqua: #04F6FE; /* Cyan for headers and accents */
+  --blackcurrant: #090B17; /* Blackcurrant for backgrounds */
+  --icterine: #FFFA44; /* Bright yellow for text */
+  --cadet-gray: #A0A0A0; /* Gray for borders */
+}
+/* Base styling W Pixelify Font */
+body {
+  background-color: var(--blackcurrant);
+  font-family: "Pixelify Sans", sans-serif;
+  color: var(--icterine);
+  padding-top: 70px; /* Offset fixed navi */
+}
+
+/* Heading color */
+h2 {
+  color: var(--trapberry);
+}
+
+/*Sticky Nav*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: var(--blackcurrant);
+  border: 2px solid var(--cadet-gray);
+}
+
+.nav-link, .navbar-brand {
+  color: var(--aqua) !important;
+}
+
+/* burger toggle */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23A0A0A0' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+/* Form & table section containers */
+.form-section, .table-section {
+  background-color: var(--blackcurrant);
+  border: 2px solid var(--cadet-gray);
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+/* Labels styled Aqua */
+.form-label, .form-check-label {
+  color: var(--aqua);
+}
+/* White text for visibility */
+.form-control, .form-check-input {
+  background-color: var(--blackcurrant);
+  color: #FFFFFF; 
+  border: 1px solid var(--cadet-gray);
+}
+
+/* White placeholder text */
+.form-control::placeholder {
+  color: #FFFFFF; 
+  opacity: 0.7; /* transparent FX*/
+}
+ /* White on focus */
+.form-control:focus {
+  background-color: var(--blackcurrant);
+  color: #FFFFFF;
+  border-color: var(--icterine);
+  box-shadow: 0 0 5px var(--aqua);
+}
+
+/* Trapberry glow on invalid */
+.form-control:invalid {
+  border-color: var(--trapberry);
+  box-shadow: 0 0 3px var(--trapberry);
+}
+
+/*  Aqua glow on valid */
+.form-control:valid {
+  border-color: var(--aqua);
+  box-shadow: 0 0 3px var(--aqua);
+}
+
+/* Themed success button */
+.btn-success  {
+  background-color: var(--blackcurrant);
+  border-color: white;
+  color: var(--icterine);
+}
+
+/* Themed RESTART & QUiT Buttons */
+.btn-primary, .btn-secondary {
+  background-color: var(--blackcurrant);
+  border-color: white;
+  color: var(--icterine);
+}
+
+/* Centers all the buttons */
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* minor scale FXs on button hover*/
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* table txt & border color var */
+.table {
+  color: var(--icterine); 
+  border: 1px solid var(--cadet-gray);
+}
+/* strips */
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: rgb(160, 160, 160); 
+}
+
+/* Blackcurrant row hover */
+.table-hover > tbody > tr:hover > * {
+  background-color: var(--blackcurrant); 
+ /* White text hover */
+  color: #FFFFFF;
+}
+
+/* Dojo fluid image */
+.turbo-char-img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  object-fit: contain;
+}
+
+/* Circle Logo */
+.gold-coin-img {
+  width: 300px;
+  height: 300px;
+  min-width: 300px; 
+  border-radius: 50%;
+  object-fit: cover;
+}
